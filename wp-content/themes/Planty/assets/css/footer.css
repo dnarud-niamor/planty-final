@@ -1,0 +1,23 @@
+/* Styles pour le footer */
+.site-footer {
+    background-color: white; /* Couleur de fond (modifiable) */
+    padding: 20px;
+    text-align: center; /* Centrer les éléments par défaut */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center; /* Centre horizontalement les enfants */
+    align-items: center; /* Centre verticalement les enfants */
+}
+
+.footer-link {
+    color: #333; /* Couleur du texte */
+    text-decoration: none; /* Supprime le soulignement */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-link:hover {
+    color: #007bff; /* Couleur au survol */
+}
