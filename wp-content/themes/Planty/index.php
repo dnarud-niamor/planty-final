@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 <main>
-    okokoko
     <p><?php bloginfo('description'); ?></p>
     <?php
     if (have_posts()) : 

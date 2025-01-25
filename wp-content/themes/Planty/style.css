@@ -12,8 +12,5 @@
  Text Domain:  planty
 */
 
-.wpforms-submit {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
