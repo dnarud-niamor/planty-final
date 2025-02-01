@@ -22,10 +22,19 @@ function theme_enqueue_styles(){
         'all' // Média cible (all, print, screen, etc.)
     );
 
-    // Enregistre et inclut le fichier CSS formulaire.css
+    // Enregistre et inclut le fichier CSS form-command.css
     wp_enqueue_style(
         'formulaire-style', // Identifiant unique du style
-        get_stylesheet_directory_uri() . '/assets/css/formulaire.css', // Chemin du fichier CSS
+        get_stylesheet_directory_uri() . '/assets/css/form-order.css', // Chemin du fichier CSS
+        array(), // Dépendances (aucune ici)
+        '1.0.0', // Version du fichier
+        'all' // Média cible (all, print, screen, etc.)
+    );
+
+    // Enregistre et inclut le fichier CSS form-info.css
+    wp_enqueue_style(
+        'forminfo-style', // Identifiant unique du style
+        get_stylesheet_directory_uri() . '/assets/css/form-info.css', // Chemin du fichier CSS
         array(), // Dépendances (aucune ici)
         '1.0.0', // Version du fichier
         'all' // Média cible (all, print, screen, etc.)
@@ -65,14 +74,9 @@ function ajouter_lien_admin_avant_dernier($items, $args) {
 }
 add_filter('wp_nav_menu_items', 'ajouter_lien_admin_avant_dernier', 10, 2);
 
-// Enregistrer un emplacement de menu dans le back office de WP pour le header
+// Enregistrer des emplacements de menu dans le back office de WP
 function enregistrer_menu_header() {
     register_nav_menu('header-menu', __('Menu Header'));
-}
-add_action('after_setup_theme', 'enregistrer_menu_header');
-
-// Enregistrer un emplacement de menu dans le back office de WP pour le footer
-function register_footer_menu() {
     register_nav_menu('footer-menu', __('Menu Footer', 'votre-theme-textdomain'));
 }
-add_action('after_setup_theme', 'register_footer_menu');
+add_action('after_setup_theme', 'enregistrer_menu_header');

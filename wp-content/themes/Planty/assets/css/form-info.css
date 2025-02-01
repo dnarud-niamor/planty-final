@@ -1,0 +1,44 @@
+.info-general {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.info-general p {
+    margin: 6px;
+}
+
+.info-general textarea {
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    border: 0;
+    resize: none;
+    margin-top: 5px;
+}
+
+.third-text textarea {
+    height: 150px;
+}
+
+.info-general label {
+    color: black;
+}
+
+.info-submit {
+    width: 25%;
+}
+
+.info-submit input {
+    width: 100%;
+    color: white;
+    background-color: #E0B9B4;
+    border: 0;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
