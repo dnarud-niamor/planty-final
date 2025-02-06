@@ -4,6 +4,7 @@
     align-items: center;
     margin-left: 15%;
     margin-right: 15%;
+    font-family: syne;
 }
 
 .info-general p {
@@ -19,6 +20,11 @@
     border: 0;
     resize: none;
     margin-top: 5px;
+}
+
+.info-title {
+    font-size: 30px;
+    font-weight: 700;
 }
 
 .third-text textarea {

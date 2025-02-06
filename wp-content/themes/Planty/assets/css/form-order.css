@@ -3,19 +3,46 @@
     flex-direction: column;
     margin-left: 15%;
     margin-right: 15%;
+    border-top: 1px solid white;
+    padding-top: 10px;
 }
 
 .order-product {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    border-bottom: 1px solid white; /* Ligne blanche fine */
+    justify-content: space-between;
+    border-bottom: 1px solid white;
     padding-bottom: 10px;
+    gap: 30px;
 }
 
-.order-product p {
-    margin-top: 12px;
+.order-single {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+
+.image-container img {
+    width: 100%;
+    display: block;
+  }
+
+.text-overlay {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: syne;
+    font-size: 20px;
+    font-weight: 800;
+  }
 
 .order-product input {
     width: 30px;
@@ -23,19 +50,6 @@
     text-align: center;
     border: 0;
 }
-
-
-/*sert à rien actuellement, maybe si je code la partie image*/
-.image-container {
-    width: 22%;
-}
-
-.image-container input {
-    display: flex;
-    justify-content: center;
-}
-
-/* fin de la partie qui sert à rien */
 
 .order-row {
     width: 100%;
@@ -61,7 +75,7 @@
 
 .order-info {
     width: 50%;
-    border-right: 1px solid white; /* Ligne blanche fine */
+    border-right: 1px solid white; 
 }
 
 .order-info input {
