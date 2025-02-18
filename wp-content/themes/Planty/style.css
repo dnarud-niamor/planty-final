@@ -14,9 +14,9 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
-
 .page-template-default {
     margin-top: 0;
+
 }
 
 .plant-homepage img {
@@ -28,33 +28,60 @@
     content: "";
     width: 400px;
     height: 400px;
-    background-image: url("http://localhost/Planty/wp-content/uploads/2025/01/Group-4-2.png");
+    background-image: url("./assets/images/leaf-right.png");
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
     top: 22%;
-    left: 19%;
+    left: calc(50% - 5px);
     z-index: 1; /* Derrière l'image principale */
+}
+
+@media (max-width: 800px) {
+    .plant-homepage::before {
+        width: 250px;
+        left: calc(50% - 5px);
+        }
+}
+
+@media (max-width: 500px) {
+    .plant-homepage::before {
+        width: 0px;
+        }
 }
 
 .plant-homepage::after {
     content: "";
-    width: 400px;
+    width: 350px;
     height: 400px;
-    background-image: url("http://localhost/Planty/wp-content/uploads/2025/01/Group-3-1.png");
+    background-image: url("./assets/images/leaf-left.png");
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
     top: 22%;
-    right: 15%;
-    z-index: 1; /* Derrière l'image principale */
+    left: calc(50% - 180px);
+    z-index: 1;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 800px) {
+    .plant-homepage::after {
+        width: 250px;
+        left: calc(50% - 120px);
+        }
+}
+
+@media (max-width: 500px) {
+    .plant-homepage::after {
+        width: 0px;
+        }
 }
 
 .flower-meet::before {
     content: "";
     width: 150px;
     height: 150px;
-    background-image: url("http://localhost/Planty/wp-content/uploads/2025/01/Group-2.png");
+    background-image: url("./assets/images/flower-meet.png");
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
@@ -64,24 +91,52 @@
 
 .plant-meet::before {
     content: "";
-    width: 170px;
-    height: 170px;
-    background-image: url("http://localhost/Planty/wp-content/uploads/2025/01/Group-4-2.png");
+    width: 250px;
+    height: 250px;
+    background-image: url("./assets/images/leaf-left.png");
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    bottom: 0%;
-    right: 0%;
+    top: 70%;
+    left: 80%;
+}
+
+@media (max-width: 1600px) {
+.plant-meet::before {
+    top: 70%;
+    left: 60%;
+    }
+}
+
+@media (max-width: 1250px) {
+    .plant-meet::before {
+        width: 200px;
+        height: 200px;
+        top: 95%;
+        left: 60%;
+        }
+}
+
+@media (max-width: 1025px) {
+    .plant-meet::before {
+        width: 0px;
+}
 }
 
 .plant-form::before {
     content: "";
     width: 140px;
     height: 140px;
-    background-image: url("http://localhost/Planty/wp-content/uploads/2025/01/Group-16.png");
+    background-image: url("./assets/images/plant-form.png");
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    bottom: 9%;
+    bottom: 8.5%;
     left: 30.5%;
+}
+
+@media (max-width: 1025px) {
+    .plant-form::before {
+        width: 0px;
+}
 }

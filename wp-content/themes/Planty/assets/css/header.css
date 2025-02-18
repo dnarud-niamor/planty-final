@@ -51,7 +51,7 @@
 }
 
 /* Ajustements pour les petits écrans */
-@media (max-width: 500px) {
+@media (max-width: 670px) {
     .logo img {
         max-width: 200px; /* Réduit la taille pour les petits écrans */
     }
@@ -65,4 +65,17 @@
         background-color: white;
         border-bottom: 1px solid #ddd;
     }
+    .menu li {
+        padding: 10px 10px 10px 10px;
+    }
+    
+    .menu li:nth-child(2) {
+        padding: 10px 20px 10px 10px;
+      }
+    
+    .menu > li:last-child {
+        background-color: #DC9F96; /* Applique un style au dernier <li> principal uniquement */
+        color: white;
+        padding: 10px 20px 10px 20px;
+      }
 }

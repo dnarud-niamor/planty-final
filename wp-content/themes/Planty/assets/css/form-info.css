@@ -23,6 +23,10 @@
 }
 
 .info-title {
+    margin-bottom: 30px;
+}
+
+.info-title label {
     font-size: 30px;
     font-weight: 700;
 }

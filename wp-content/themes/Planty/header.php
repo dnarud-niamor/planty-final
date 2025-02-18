@@ -11,7 +11,7 @@
             <!-- Logo -->
             <div class="logo">
                 <a href="<?php echo home_url(); ?>">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png" alt="Logo de la marque Planty">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo.png" alt="Logo de la marque Planty">
                 </a>
             </div>
 
